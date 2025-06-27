@@ -125,6 +125,16 @@ Métricas importantes:
 - Tempo Médio de Resposta
 - % de Erros
 
+## 🚚 Deploy do Projeto
+Containerização com Docker
+Exemplo Dockerfile:
+```
+FROM eclipse-temurin:17-jre
+COPY target/apijwt.jar app.jar
+ENTRYPOINT ["java", "-jar", "/app.jar"]
+```
+
+## 🔗 Endpoints Importantes
 | Método | Endpoint              | Acesso       |
 | ------ | --------------------- | ------------ |
 | POST   | /account/login        | Público      |
