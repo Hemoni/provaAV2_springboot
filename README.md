@@ -28,7 +28,7 @@ As principais dependências incluídas no `pom.xml`:
 
 Exemplo mínimo de configuração:
 
-```yaml
+```
 server:
   port: 8080
 
@@ -124,3 +124,25 @@ Métricas importantes:
 - Throughput (requisições/segundo)
 - Tempo Médio de Resposta
 - % de Erros
+
+## 🔗 Endpoints Importantes
+Método	Endpoint	Acesso
+POST	/account/login	Público
+POST	/account/register	Público
+GET	/protected	Autenticado
+GET	/account/users	Admin/User
+DELETE	/account/users/{name}	Admin apenas
+
+## 🧪 Exemplos
+```
+POST /account/login
+Content-Type: application/json
+
+{
+    "username": "admin",
+    "password": "123"
+}
+```
+
+Resposta:
+"eyJhbGciOiJIUzI1NiIsInR..."
