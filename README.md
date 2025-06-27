@@ -125,13 +125,13 @@ Métricas importantes:
 - Tempo Médio de Resposta
 - % de Erros
 
-## 🔗 Endpoints Importantes
-Método	Endpoint	Acesso
-POST	/account/login	Público
-POST	/account/register	Público
-GET	/protected	Autenticado
-GET	/account/users	Admin/User
-DELETE	/account/users/{name}	Admin apenas
+| Método | Endpoint              | Acesso       |
+| ------ | --------------------- | ------------ |
+| POST   | /account/login        | Público      |
+| POST   | /account/register     | Público      |
+| GET    | /protected            | Autenticado  |
+| GET    | /account/users        | Admin/User   |
+| DELETE | /account/users/{name} | Admin apenas |
 
 ## 🧪 Exemplos
 ```
