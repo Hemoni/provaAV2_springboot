@@ -127,6 +127,7 @@ Métricas importantes:
 
 ## 🚚 Deploy do Projeto
 Containerização com Docker
+
 Exemplo Dockerfile:
 ```
 FROM eclipse-temurin:17-jre
